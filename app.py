@@ -2,7 +2,7 @@ import time
 hostName = "localhost"
 serverPort = 8080 #You can choose any available port; by default, it is 8000
 class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self): //the do_GET method is inherited from BaseHTTPRequestHandler
+    def do_GET(self): #the do_GET method is inherited from BaseHTTPRequestHandler
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
