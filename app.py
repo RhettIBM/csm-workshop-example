@@ -1,6 +1,5 @@
 import time
-import http.server
-import socketserver
+from http.server import BaseHTTPRequestHandler
 
 hostName = "localhost"
 serverPort = 8080 #You can choose any available port; by default, it is 8000
